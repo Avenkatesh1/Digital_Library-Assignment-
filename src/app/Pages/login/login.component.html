@@ -1,1 +1,21 @@
-<p>login works!</p>
+
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form action="#" method="POST">
+                <div class="textbox">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" [(ngModel)]="loginObj.username" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="textbox">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" [(ngModel)]="loginObj.password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm" (click)="onLogin()" >Login</button>
+                <a href="#" class="forgot">Forgot Password?</a>
+            </form>
+        </div>
+    </div>
+</body>
+
