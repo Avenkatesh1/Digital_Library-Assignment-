@@ -1,1 +1,113 @@
-<p>add-booking works!</p>
+<div class="container">
+    <div class="row py-4">
+        <div class="col-8">
+            <form novalidate>
+                <div class="form-group row">
+                    <label for="isbnNumber" class="col-sm-2 col-form-label text-danger">ISBN NO:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control border-1 border-dark"
+                            [(ngModel)]="propertyForm.isbnNumber" #isnumbers="ngModel" name="isbnNumber" id="staticEmail"
+                            required minlength="5" maxlength="50" name="isbnNumber">
+                        <div class="text-danger"  *ngIf="isnumbers.invalid && (isnumbers.touched || isnumbers.dirty)">
+                            <span *ngIf="isnumbers.errors?.['required']">ISBN Number is required</span>
+                            <span *ngIf="isnumbers.errors?.['minlength']">Minimum 5 Numbers required</span>
+                            <span *ngIf="isnumbers.errors?.['maxlength']">Max 50 Numbers Only</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-4">
+                    <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control border-1 border-dark" #pname="ngModel"
+                            [(ngModel)]="propertyForm.name" name="name" id="inputPassword" required minlength="5"
+                            maxlength="50">
+                        <div class="text-danger"  *ngIf="pname.invalid && (pname.touched || pname.dirty)">
+                            <span *ngIf="pname.errors?.['required']">ISBN Number is required</span>
+                            <span *ngIf="pname.errors?.['minlength']">Minimum 5 Numbers required</span>
+                            <span *ngIf="pname.errors?.['maxlength']">Max 50 Charectors Only</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-4">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Author:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control border-1 border-dark" #authers="ngModel"
+                            [(ngModel)]="propertyForm.anuthor" name="anuthor" id="inputPassword" required minlength="5"
+                            maxlength="50">
+                            <div class="text-danger"  *ngIf="authers.invalid && (authers.touched || authers.dirty)">
+                                <!-- <span *ngIf="authers.errors?.['required']">ISBN Number is required</span> -->
+                                <!-- <span *ngIf="authers.errors?.['minlength']">Minimum 5 Numbers required</span> -->
+                                <span *ngIf="authers.errors?.['minlength']">Max 50 Charectors Only</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="form-group row my-4">
+                    <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Publication:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control border-1 border-dark" #publications="ngModel"
+                            [(ngModel)]="propertyForm.publication" name="publication" id="inputPassword" required
+                            minlength="5" maxlength="50">
+                            <div class="text-danger"  *ngIf="publications.invalid && (publications.touched || publications.dirty)">
+                                <span *ngIf="publications.errors?.['required']">ISBN Number is required</span>
+                                <span *ngIf="publications.errors?.['minlength']">Minimum 5 Numbers required</span>
+                                <span *ngIf="publications.errors?.['maxlength']">Max 50 Charectors Only</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="form-group row my-4">
+                    <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Details:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" [(ngModel)]="propertyForm.details" #ddetails="ngModel"
+                            name="details" rows="3" required minlength="5" maxlength="250"></textarea>
+                            <div class="text-danger"  *ngIf="ddetails.invalid && (ddetails.touched || ddetails.dirty)">
+                                <span *ngIf="ddetails.errors?.['required']">ISBN Number is required</span>
+                                <span *ngIf="ddetails.errors?.['minlength']">Minimum 5 Numbers required</span>
+                                <span *ngIf="ddetails.errors?.['maxlength']">Max 50 Charectors Only</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="form-group row my-4">
+                    <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Qty:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control border-1 border-dark" #qtys="ngModel"
+                            [(ngModel)]="propertyForm.qty" name="qty" id="inputPassword" required minlength="1"
+                            maxlength="5">
+                            <div class="text-danger"  *ngIf="qtys.invalid && (qtys.touched || qtys.dirty)">
+                                <span *ngIf="qtys.errors?.['required']">ISBN Number is required</span>
+                                <span *ngIf="qtys.errors?.['minlength']">Minimum 5 Numbers required</span>
+                                <span *ngIf="qtys.errors?.['maxlength']">Max 50 Charectors Only</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="form-group row my-4">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Price:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control border-1 border-dark" #prices="ngModel"
+                            [(ngModel)]="propertyForm.price" name="price" id="inputPassword" required minlength="2"
+                            maxlength="10">
+                            <div class="text-danger" *ngIf="prices.invalid && (prices.touched || prices.dirty)">
+                                <span *ngIf="prices.errors?.['required']">ISBN Number is required</span>
+                                <span *ngIf="prices.errors?.['minlength']">Minimum 5 Numbers required</span>
+                                <span *ngIf="prices.errors?.['maxlength']">Max 50 Charectors Only</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="form-group row my-4">
+                    <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Branch:</label>
+                    <div class="col-sm-10">
+                        <select name="" [(ngModel)]="propertyForm.branch" #branch="ngModel" name="branch"
+                            class="form-select">
+                            <option selected>Select Deportments</option>
+                            <option value="IT">IT</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Mechonical">Mechonical</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row my-4">
+                    <button class="btn btn-primary" type="submit">Button</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
