@@ -1,1 +1,36 @@
-<p>delete-booking works!</p>
+<div class="bg-info p-2 text-center text-white my-1"><b><h2>DELETE BOOK</h2></b></div>
+
+<table class="table table-bordered table-striped table-success my-1">
+    <thead>
+        <tr>
+            <th scope="col">S No.</th>
+            <th scope="col">ISBN</th>
+            <th scope="col">Booking Name</th>
+            <th scope="col">Author</th>
+            <th scope="col">Publication</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Price</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Details</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of propList; track $index) {
+            <tr>
+                <td>{{$index +1}} </td>
+                <td>{{item.isbnNumber}}</td>                
+                <td>{{item.name}}</td>                
+                <td>{{item.anuthor}}</td>                
+                <td>{{item.publication}}</td>                
+                <td>{{item.details}}</td>                
+                <td>{{item.qty}}</td>                
+                <td>{{item.price}}</td>                
+                <td>{{item.branch}}</td> 
+                <td>
+                   <button class="btn btn-danger" (click)="onDelete(item.id)"><i class="bi bi-calendar-x-fill"></i></button>
+                </td>               
+            </tr>
+        }
+    </tbody>
+</table>

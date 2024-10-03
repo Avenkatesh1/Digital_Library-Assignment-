@@ -17,11 +17,20 @@ export class DashboardComponent implements OnInit {
   realdata: number[] = [];
   colordata: string[] = [];
 
+  propertyList: any[] = [];
+
   productService = inject(ProductsService)
 
 
   ngOnInit(): void {
     this.loadchartdata();
+    this.getAllpropertyList();
+  }
+
+  getAllpropertyList(){
+     this.productService.getAllproperties().subscribe((res:any) => {
+         this.propertyList = res;  
+     })
   }
 
   loadchartdata() {

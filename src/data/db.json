@@ -1,130 +1,356 @@
 {
-    "products": [
-        {
-            "code": "202401",
-            "name": "Cricket Bat",
-            "price": 1000,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202402",
-            "name": "Cricket Ball",
-            "price": 100,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202403",
-            "name": "Cricket Pad",
-            "price": 800,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202404",
-            "name": "Guard",
-            "price": 80,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202405",
-            "name": "Batting cloves",
-            "price": 400,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202406",
-            "name": "Keeping cloves",
-            "price": 800,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202407",
-            "name": "Sticks",
-            "price": 240,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202408",
-            "name": "Sticks",
-            "price": 240,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202409",
-            "name": "Sticks",
-            "price": 240,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202410",
-            "name": "Sticks",
-            "price": 240,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202411",
-            "name": "Sticks",
-            "price": 240,
-            "category": "sports",
-            "status": true
-        },
-        {
-            "code": "202412",
-            "name": "Sticks",
-            "price": 240,
-            "category": "sports",
-            "status": true
-        }
-    ],
-    "sales": [
-        {
-          "year": 2015,
-          "amount": 5000,
-          "colorcode": "green"
-        },
-        {
-          "year": 2016,
-          "amount": 6000,
-          "colorcode": "yellow"
-        },
-        {
-          "year": 2017,
-          "amount": 2000,
-          "colorcode": "red"
-        },
-        {
-          "year": 2018,
-          "amount": 6500,
-          "colorcode": "blue"
-        },
-        {
-          "year": 2019,
-          "amount": 4000,
-          "colorcode": "grey"
-        },
-        {
-          "year": 2020,
-          "amount": 7000,
-          "colorcode": "orange"
-        },
-        {
-          "year": 2021,
-          "amount": 17000,
-          "colorcode": "pink"
-        },
-        {
-          "year": 2022,
-          "amount": 21000,
-          "colorcode": "pink"
-        }
-      ]
+  "products": [
+    {
+      "code": "202401",
+      "name": "Cricket Bat",
+      "price": 1000,
+      "category": "sports",
+      "status": true,
+      "id": "a396"
+    },
+    {
+      "code": "202402",
+      "name": "Cricket Ball",
+      "price": 100,
+      "category": "sports",
+      "status": true,
+      "id": "31a4"
+    },
+    {
+      "code": "202403",
+      "name": "Cricket Pad",
+      "price": 800,
+      "category": "sports",
+      "status": true,
+      "id": "0df1"
+    },
+    {
+      "code": "202404",
+      "name": "Guard",
+      "price": 80,
+      "category": "sports",
+      "status": true,
+      "id": "e7c2"
+    },
+    {
+      "code": "202405",
+      "name": "Batting cloves",
+      "price": 400,
+      "category": "sports",
+      "status": true,
+      "id": "65a5"
+    },
+    {
+      "code": "202406",
+      "name": "Keeping cloves",
+      "price": 800,
+      "category": "sports",
+      "status": true,
+      "id": "5fb3"
+    },
+    {
+      "code": "202407",
+      "name": "Sticks",
+      "price": 240,
+      "category": "sports",
+      "status": true,
+      "id": "2d73"
+    },
+    {
+      "code": "202408",
+      "name": "Sticks",
+      "price": 240,
+      "category": "sports",
+      "status": true,
+      "id": "ec1c"
+    },
+    {
+      "code": "202409",
+      "name": "Sticks",
+      "price": 240,
+      "category": "sports",
+      "status": true,
+      "id": "b3be"
+    },
+    {
+      "code": "202410",
+      "name": "Sticks",
+      "price": 240,
+      "category": "sports",
+      "status": true,
+      "id": "26c3"
+    },
+    {
+      "code": "202411",
+      "name": "Sticks",
+      "price": 240,
+      "category": "sports",
+      "status": true,
+      "id": "20a8"
+    },
+    {
+      "code": "202412",
+      "name": "Sticks",
+      "price": 240,
+      "category": "sports",
+      "status": true,
+      "id": "2e3d"
+    }
+  ],
+  "sales": [
+    {
+      "year": 2015,
+      "amount": 5000,
+      "colorcode": "green",
+      "id": "2e02"
+    },
+    {
+      "year": 2016,
+      "amount": 6000,
+      "colorcode": "yellow",
+      "id": "5ba7"
+    },
+    {
+      "year": 2017,
+      "amount": 20000,
+      "colorcode": "red",
+      "id": "c66b"
+    },
+    {
+      "year": 2018,
+      "amount": 6500,
+      "colorcode": "blue",
+      "id": "cc7c"
+    },
+    {
+      "year": 2019,
+      "amount": 10006,
+      "colorcode": "grey",
+      "id": "4df9"
+    },
+    {
+      "year": 2020,
+      "amount": 7000,
+      "colorcode": "orange",
+      "id": "2a19"
+    },
+    {
+      "year": 2021,
+      "amount": 17000,
+      "colorcode": "pink",
+      "id": "5311"
+    },
+    {
+      "year": 2022,
+      "amount": 21000,
+      "colorcode": "#ffffff",
+      "id": "000e"
+    }
+  ],
+  "properties": [
+    {
+      "id": "1",
+      "isbn": 8884433,
+      "bookName": "Prasad",
+      "author": "Ram",
+      "rollNo": 101,
+      "Name": "Ramaraw",
+      "issuedDate": "10/20/2019"
+    },
+    {
+      "id": "1",
+      "isbn": 8884433,
+      "bookName": "Prasad",
+      "author": "Ram",
+      "rollNo": 101,
+      "Name": "Ramaraw",
+      "issuedDate": "10/20/2019"
+    },
+    {
+      "id": "1",
+      "isbn": 8884433,
+      "bookName": "Prasad",
+      "author": "Ram",
+      "rollNo": 101,
+      "Name": "Ramaraw",
+      "issuedDate": "10/20/2019"
+    },
+    {
+      "id": "1",
+      "isbn": 8884433,
+      "bookName": "Prasad",
+      "author": "Ram",
+      "rollNo": 101,
+      "Name": "Ramaraw",
+      "issuedDate": "10/20/2019"
+    },
+    {
+      "id": "1",
+      "isbn": 8884433,
+      "bookName": "Prasad",
+      "author": "Ram",
+      "rollNo": 101,
+      "Name": "Ramaraw",
+      "issuedDate": "10/20/2019"
+    },
+    {
+      "id": "1",
+      "isbn": 8884433,
+      "bookName": "Prasad",
+      "author": "Ram",
+      "rollNo": 101,
+      "Name": "Ramaraw",
+      "issuedDate": "10/20/2019"
+    },
+    {
+      "id": "1",
+      "isbn": 8884433,
+      "bookName": "Prasad",
+      "author": "Ram",
+      "rollNo": 101,
+      "Name": "Ramaraw",
+      "issuedDate": "10/20/2019"
+    },
+    {
+      "id": "1",
+      "isbn": 8884433,
+      "bookName": "Prasad",
+      "author": "Ram",
+      "rollNo": 101,
+      "Name": "Ramaraw",
+      "issuedDate": "10/20/2019"
+    }
+  ],
+  "savedProperties": [
+    {
+      "id": "fc91",
+      "isbnNumber": 88999777,
+      "name": "Rammohan",
+      "anuthor": "Mohan",
+      "publication": "Inter",
+      "details": "this simple check",
+      "qty": 12,
+      "price": 240000,
+      "branch": "Mechonical"
+    },
+    {
+      "id": "dbc6",
+      "isbnNumber": 7766555,
+      "name": "Venkay",
+      "anuthor": "Vikram",
+      "publication": "Books",
+      "details": "i have simple added this",
+      "qty": 11,
+      "price": 12000,
+      "branch": "Mechonical"
+    },
+    {
+      "id": "fc91",
+      "isbnNumber": 88999777,
+      "name": "Rammohan",
+      "anuthor": "Mohan",
+      "publication": "Inter",
+      "details": "this simple check",
+      "qty": 12,
+      "price": 240000,
+      "branch": "Mechonical"
+    },
+    {
+      "id": "dbc6",
+      "isbnNumber": 7766555,
+      "name": "Venkay",
+      "anuthor": "Vikram",
+      "publication": "Books",
+      "details": "i have simple added this",
+      "qty": 11,
+      "price": 12000,
+      "branch": "Mechonical"
+    },
+    {
+      "id": "fc91",
+      "isbnNumber": 88999777,
+      "name": "Rammohan",
+      "anuthor": "Mohan",
+      "publication": "Inter",
+      "details": "this simple check",
+      "qty": 12,
+      "price": 240000,
+      "branch": "Mechonical"
+    },
+    {
+      "id": "dbc6",
+      "isbnNumber": 7766555,
+      "name": "Venkay",
+      "anuthor": "Vikram",
+      "publication": "Books",
+      "details": "i have simple added this",
+      "qty": 11,
+      "price": 12000,
+      "branch": "Mechonical"
+    }, {
+      "id": "fc91",
+      "isbnNumber": 88999777,
+      "name": "Rammohan",
+      "anuthor": "Mohan",
+      "publication": "Inter",
+      "details": "this simple check",
+      "qty": 12,
+      "price": 240000,
+      "branch": "Mechonical"
+    },
+    {
+      "id": "dbc6",
+      "isbnNumber": 7766555,
+      "name": "Venkay",
+      "anuthor": "Vikram",
+      "publication": "Books",
+      "details": "i have simple added this",
+      "qty": 11,
+      "price": 12000,
+      "branch": "Mechonical"
+    }, {
+      "id": "fc91",
+      "isbnNumber": 88999777,
+      "name": "Rammohan",
+      "anuthor": "Mohan",
+      "publication": "Inter",
+      "details": "this simple check",
+      "qty": 12,
+      "price": 240000,
+      "branch": "Mechonical"
+    },
+    {
+      "id": "dbc6",
+      "isbnNumber": 7766555,
+      "name": "Venkay",
+      "anuthor": "Vikram",
+      "publication": "Books",
+      "details": "i have simple added this",
+      "qty": 11,
+      "price": 12000,
+      "branch": "Mechonical"
+    }, {
+      "id": "fc91",
+      "isbnNumber": 88999777,
+      "name": "Rammohan",
+      "anuthor": "Mohan",
+      "publication": "Inter",
+      "details": "this simple check",
+      "qty": 12,
+      "price": 240000,
+      "branch": "Mechonical"
+    },
+    {
+      "id": "dbc6",
+      "isbnNumber": 7766555,
+      "name": "Venkay",
+      "anuthor": "Vikram",
+      "publication": "Books",
+      "details": "i have simple added this",
+      "qty": 11,
+      "price": 12000,
+      "branch": "Mechonical"
+    }
+
+  ]
 }
