@@ -30,7 +30,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="card bg-warning-subtle">
-                    <div class="card-title text-center py-4 form-control-lg"><b>No. Of Books</b></div>
+                    <div class="card-title text-center form-control-lg"><b>No. Of Books</b></div>
                     <div class="card-body">
                         <canvas id="piechart"></canvas>
                     </div>
@@ -41,6 +41,7 @@
                 <table class="table table-bordered table-striped table-success">
                     <thead>
                         <tr>
+                            <th>S N0.</th>
                             <th scope="col" class="text-white">ISBN</th>
                             <th scope="col">Booking Name</th>
                             <th scope="col">Author</th>
@@ -50,54 +51,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+                        @for (item of propertyList; track $index) {
+                            <tr>
+                                <td>{{$index + 1}}</td>
+                                <td>{{item.isbn}}</td>
+                                <td>{{item.bookName}}</td>
+                                <td>{{item.author}}</td>
+                                <td>{{item.rollNo}}</td>
+                                <td>{{item.Name}}</td>
+                                <td>{{item.issuedDate}}</td>
+                            </tr>
+                        }
                     </tbody>
                 </table>
             </div>

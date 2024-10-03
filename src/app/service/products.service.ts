@@ -15,6 +15,21 @@ export class ProductsService {
   }
 
   loadsalesdata(){
-    return this.http.get<salesdata[]>("http://localhost:3000/sales")
+    return this.http.get<salesdata[]>("http://localhost:3000/sales");
   }
+  getAllproperties(){
+    return this.http.get<salesdata[]>("http://localhost:3000/properties");
+  }
+  saveProperty(obj:any){
+    return this.http.post<salesdata[]>("http://localhost:3000/savedProperties", obj);
+  }
+
+  getProperty(){
+    return this.http.get("http://localhost:3000/savedProperties");
+  }
+
+  deleteProperty(id:any){
+    return this.http.delete("http://localhost:3000/savedProperties"+id);
+  }
+
 }

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ProductsService } from '../../service/products.service';
 
 @Component({
   selector: 'app-add-booking',
@@ -10,6 +11,8 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
   styleUrl: './add-booking.component.css'
 })
 export class AddBookingComponent {
+
+  productSer = inject(ProductsService)
 
     propertyForm: any ={ 
         isbnNumber:'',
@@ -21,6 +24,13 @@ export class AddBookingComponent {
         price:'',
         branch:'',
     }
+
+    saveAllpropertyList(){
+      this.productSer.saveProperty(this.propertyForm).subscribe((res:any) => {
+          alert("Recoreds saved successfully");
+          this.propertyForm.reset();
+      })
+   }
 
 
 }
